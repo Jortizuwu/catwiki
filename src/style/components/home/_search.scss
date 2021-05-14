@@ -1,0 +1,52 @@
+// home Search
+.home__search {
+    background-image: url(../../../assets/img/HeroImagelg.png);
+    border-radius: 25px 25px 0px 0px;
+    border: none;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+    height: 450px;
+    width: 100%;
+    color: white;
+    display: flex;
+  }
+  
+  .home__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+  }
+  
+  .home__info img {
+    width: 210px;
+    fill: #fff;
+    align-content: flex-start;
+    margin-bottom: 10px;
+  }
+  
+  .home__input-container {
+    background-color: white;
+    padding: 5px;
+    width: 230px;
+    border-radius: 24px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .home__input-container input {
+    border: none;
+    margin: auto 0;
+  
+    &:focus {
+      outline: none;
+    }
+  }
+  .search {
+    color: rgb(75, 75, 75);
+    font-size: 20px;
+  }

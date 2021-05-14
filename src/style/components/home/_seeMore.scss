@@ -1,0 +1,119 @@
+// home More
+.home__more {
+  background-color: #e3e1dc;
+  border-radius: 0px 0px 25px 25px;
+  padding: 10px;
+  height: 500px;
+  color: #291507;
+}
+
+.home__allinfo {
+  margin: 0px auto;
+  width: 81%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.home__allinfo h4 {
+  font-size: 16px;
+
+  &::after {
+    display: block;
+    content: "";
+    width: 50px;
+    height: 5px;
+    margin-top: 5px;
+    border-radius: 25px;
+    background-color: #291507;
+  }
+}
+
+.home__see-more {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.home__see-more h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  width: 60%;
+  margin: 0px;
+}
+
+.home__see-more button {
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.more-see {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // width: 50%;
+  color: #291507;
+  &:hover {
+    // text-decoration: underline;
+    color: darken($color: #291507, $amount: 20);
+  }
+}
+
+.more-see p {
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0px;
+  width: 20%;
+  transition: 0.3s ease;
+
+  &:hover {
+    text-decoration: underline;
+    color: darken($color: #291507, $amount: 20);
+  }
+}
+
+.home__card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  align-self: center;
+  border: none;
+  background-color: #e3e1dc;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 170px;
+  color: #291507;
+}
+
+.card-img-top {
+  height: 170px;
+  object-fit: cover;
+  border-radius: 25px;
+  width: 170px;
+
+  transition: 0.3s ease;
+
+  &:hover {
+    box-shadow: 3px 7px 6px -3px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 3px 7px 6px -3px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 3px 7px 6px -3px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.card-body {
+  padding: 0px;
+  margin-top: 10px;
+}
+
+.card-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
