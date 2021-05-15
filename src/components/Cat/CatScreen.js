@@ -22,7 +22,7 @@ export const CatScreen = ({ history }) => {
   };
 
   return (
-    <main>
+    <main className="animate__animated animate__fadeIn">
       {cat &&
         cat.map((info) => {
           return (
@@ -33,7 +33,7 @@ export const CatScreen = ({ history }) => {
               {resolution < 450 ? (
                 <div>
                   <div
-                    className="cat__background"
+                    className="cat__background animate__animated animate__fadeIn"
                     style={{
                       backgroundImage: `url(${info?.url})`,
                       height: "400px",

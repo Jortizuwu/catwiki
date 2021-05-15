@@ -1,15 +1,33 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { allCatsContext } from "../../context/allCatsContext";
+import Typical from "react-typical";
 
 export const SeeMore = () => {
   const { allCats } = useContext(allCatsContext);
+
+  const showNames = [
+    "Chantilly",
+    4000,
+    "Javanese",
+    4000,
+    "Abyssinian",
+    4000,
+    "Burmilla",
+    4000,
+    "Bombay",
+    4000
+  ];
+
   return (
-    <div className="home__more ">
+    <main className="home__more ">
       <div className="home__allinfo mt-3">
         <h4>Most Searched Breeds</h4>
         <div className="home__see-more mb-4">
-          <h2 className="">66+ Breeds For you to discover</h2>
+          <h2 className="home__see-breeds">
+            66+ Breeds For you to discover as
+            <Typical steps={showNames} loop={Infinity} wrapper="p" />
+          </h2>
           <Link to="/" className="more-see">
             <p>see more</p>
             <span className="material-icons arrow">arrow_right</span>
@@ -43,6 +61,6 @@ export const SeeMore = () => {
           )}
         </div>
       </div>
-    </div>
+    </main>
   );
 };
