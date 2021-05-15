@@ -16,10 +16,10 @@ export const SeeMore = () => {
           </Link>
         </div>
         <div className="home__card-container">
-          {(allCats.length > 0) ? (
+          {allCats.length > 0 ? (
             allCats.slice(18, 22).map((cat) => {
               return (
-                <Link key={cat.id} to="/" className="card">
+                <Link key={cat.id} to={`/breed/${cat.id}`} className="card">
                   <img
                     src={cat?.image?.url}
                     className="card-img-top"
@@ -32,7 +32,10 @@ export const SeeMore = () => {
               );
             })
           ) : (
-            <div className="d-flex justify-content-center" style={{margin: "auto 0px"}}>
+            <div
+              className="d-flex justify-content-center"
+              style={{ margin: "auto 0px" }}
+            >
               <div className="spinner-grow text-danger" role="status">
                 <span className="visually-hidden">Loading...</span>
               </div>

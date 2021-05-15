@@ -1,43 +1,43 @@
-// @media screen and (max-width: 1440px) {
-//   .card {
-//     width: 235px;
-//   }
+@media screen and (min-width: 1440px) {
+  .card {
+    width: 235px;
+  }
 
-//   .card-img-top {
-//     border-radius: 10px;
-//     width: 235px;
-//     height: 180px;
-//   }
+  .card-img-top {
+    border-radius: 10px;
+    width: 235px;
+    height: 180px;
+  }
 
-//   .home__info-gallery {
-//     width: 100%;
-//     display: grid;
-//     grid-template-columns: 0.9fr 0.8fr 0.3fr 1fr 1fr 1fr 1fr;
-//     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-//     gap: 20px;
-//     grid-template-areas:
-//       ". img1 img1 img1 img3 img3 img3"
-//       ". img1 img1 img1 img3 img3 img3"
-//       ". . img2 img2 img3 img3 img3"
-//       ". . img2 img2 img3 img3 img3"
-//       ". . img2 img2 . . .";
-//   }
-//   .img1 {
-//     grid-area: img1;
-//     width: 190px;
-//     height: 120px;
-//   }
-//   .img2 {
-//     grid-area: img2;
-//     width: 130px;
-//     height: 185px;
-//   }
-//   .img3 {
-//     grid-area: img3;
-//     width: 170px;
-//     height: 254px;
-//   }
-// }
+  .home__info-gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.9fr 0.8fr 0.3fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    grid-template-areas:
+      ". img1 img1 img1 img3 img3 img3"
+      ". img1 img1 img1 img3 img3 img3"
+      ". . img2 img2 img3 img3 img3"
+      ". . img2 img2 img3 img3 img3"
+      ". . img2 img2 . . .";
+  }
+  .img1 {
+    grid-area: img1;
+    width: 190px;
+    height: 120px;
+  }
+  .img2 {
+    grid-area: img2;
+    width: 130px;
+    height: 185px;
+  }
+  .img3 {
+    grid-area: img3;
+    width: 170px;
+    height: 254px;
+  }
+}
 
 @media screen and (max-width: 1024px) {
   .home__card-container {
@@ -862,9 +862,6 @@
     margin-top: 10px;
     font-size: 1.3rem;
   }
-  // .more-see{
-  //   width: 50%;
-  // }
 
   .home__see-more p {
     width: 100%;
@@ -929,5 +926,26 @@
   }
   .home__footer-info p {
     font-size: 0.8rem;
+  }
+
+  // catScreen
+  .cat__presentation {
+    display: flex;
+    flex-direction: column;
+  }
+  .cat__presentation img {
+    border-radius: 10px;
+  }
+
+  .cat__all-info {
+    // width: 300px;
+    gap: 10px;
+    grid-template-rows: 0.1fr 0.3fr 1.4fr;
+  }
+
+  .cat__all-info p {
+    // width: 300px;
+    font-size: 0.6rem;
+    font-weight: 600;
   }
 }

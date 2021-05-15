@@ -1,11 +1,15 @@
 
 @import "../style/base/settings";
 @import "../style/base/base";
+// home
 @import "../style/components/home/search";
 @import "../style/components/home/seeMore";
 @import "../style/components/home/infoPage";
+// cat
+@import "../style/components/cat/catHome";
+// gobal
 @import "../style/components/gobal/footer";
-@import "../style/components/home/responsive";
+@import "../style/components/gobal/responsive";
 
 
 

@@ -53,10 +53,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // width: 50%;
   color: #291507;
+  
   &:hover {
-    // text-decoration: underline;
     color: darken($color: #291507, $amount: 20);
   }
 }
@@ -66,7 +65,7 @@
   font-size: 1rem;
   text-align: center;
   margin: 0px;
-  width: 20%;
+  width: 100%;
   transition: 0.3s ease;
 
   &:hover {

@@ -6,6 +6,7 @@ import { AppRouter } from "./Routers/AppRouter";
 export const CatWiki = () => {
   const [allCats, setAllCats] = useState([]);
 
+  
   const getData = useCallback( async () => {
     const data = await allCatsByApi();
     setAllCats(data);
@@ -16,10 +17,10 @@ export const CatWiki = () => {
   }, []);
 
   return (
-    <div className="container">
+    <>
       <allCatsContext.Provider value={{ allCats }}>
         <AppRouter />
       </allCatsContext.Provider>
-    </div>
+    </>
   );
 };

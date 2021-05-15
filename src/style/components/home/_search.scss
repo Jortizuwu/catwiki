@@ -1,52 +1,92 @@
 // home Search
 .home__search {
-    background-image: url(../../../assets/img/HeroImagelg.png);
-    border-radius: 25px 25px 0px 0px;
-    border: none;
-    background-position: center;
-    background-size: cover;
-    padding: 10px;
-    height: 450px;
-    width: 100%;
-    color: white;
-    display: flex;
+  background-image: url(../../../assets/img/HeroImagelg.png);
+  border-radius: 25px 25px 0px 0px;
+  border: none;
+  background-position: center;
+  background-size: cover;
+  padding: 10px;
+  height: 450px;
+  width: 100%;
+  color: white;
+  display: flex;
+}
+
+.home__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+.home__info img {
+  width: 210px;
+  fill: #fff;
+  align-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.home__input-container {
+  background-color: white;
+  padding: 5px;
+  width: 230px;
+  border-radius: 24px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home__input-container input {
+  border: none;
+  margin: auto 0;
+  width: 88%;
+
+  &:focus {
+    outline: none;
   }
-  
-  .home__info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
+}
+.search {
+  color: rgb(75, 75, 75);
+  font-size: 20px;
+}
+
+.home__list {
+  padding: 10px 5px;
+  border-radius: 15px;
+  background-color: white;
+  max-height: 160px;
+  overflow-y: auto;
+  position: absolute;
+  z-index: 1;
+
+  &::-webkit-scrollbar{
+    width: 7px;
   }
-  
-  .home__info img {
-    width: 210px;
-    fill: #fff;
-    align-content: flex-start;
-    margin-bottom: 10px;
+  &::-webkit-scrollbar-track {
+    background: transparent;     
+    margin: 10px;
   }
-  
-  .home__input-container {
-    background-color: white;
-    padding: 5px;
-    width: 230px;
-    border-radius: 24px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  &::-webkit-scrollbar-thumb {
+    margin: 10px;
+    background-color:rgb(128, 128, 128);   
+    border-radius: 20px;     
   }
-  
-  .home__input-container input {
-    border: none;
-    margin: auto 0;
-  
-    &:focus {
-      outline: none;
-    }
+}
+
+.list {
+  display: block;
+  padding: 8px;
+  height: 40px;
+  width: 100%;
+  text-align: start;  
+  transition: .2s ease;
+  text-decoration: none;
+  color: #291507;
+
+  &:hover{
+    background-color: rgba(199, 199, 199, 0.596);
+    border-radius: 4mepx;
   }
-  .search {
-    color: rgb(75, 75, 75);
-    font-size: 20px;
-  }
+}

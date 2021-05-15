@@ -4,6 +4,19 @@
 
 body{
   font-family: 'Montserrat', sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(70, 70, 70) auto;
+
+  &::-webkit-scrollbar{
+    width: 7px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;     
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color:rgb(70, 70, 70);   
+    border-radius: 20px;     
+  }
 }
 
 .pointer {
