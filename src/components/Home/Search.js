@@ -80,13 +80,13 @@ export const Search = () => {
                 to: you
               </p>
               <a
-                // ref="noreferrer"
+                rel="noreferrer"
                 target="_blank"
                 href="https://www.youtube.com/watch?v=D42jooB9ghk"
               >
                 Jose Jose - El triste
                 <span className=" material-icons">
-                  <span class="material-icons">play_circle_outline</span>
+                  <span className="material-icons">play_circle_outline</span>
                 </span>
               </a>
             </div>

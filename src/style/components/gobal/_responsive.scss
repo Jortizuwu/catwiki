@@ -55,9 +55,11 @@
     height: 140px;
   }
   // see more
+
   .home__more {
     height: 100%;
   }
+
   .home__see-more h2 {
     width: 100%;
     margin-top: 10px;
@@ -150,7 +152,6 @@
   }
 
   .card-img-top {
-    border-radius: 10px;
     width: 129px;
     height: 110px;
   }
@@ -158,12 +159,7 @@
   .card-text {
     font-size: 0.5rem;
   }
-
   // see more
-
-  .home__more {
-    height: 100%;
-  }
 
   .home__allinfo h4 {
     font-size: 0.8rem;
@@ -177,8 +173,6 @@
   }
 
   .home__see-more h2 {
-    width: 100%;
-    margin-top: 10px;
     font-size: 1.3rem;
   }
 
@@ -186,80 +180,30 @@
     width: 100%;
     font-size: 0.6rem;
   }
+
   .more-see p {
     font-size: 0.5rem;
   }
+  
   .home__info-info {
     margin-top: 1.5rem !important;
   }
-  .home__info-more {
-    width: 100%;
-    height: 230px;
-    justify-content: center;
-  }
-
-  .home__info-gallery {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 0.9fr 0.8fr 0.3fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    grid-template-areas:
-      "img1 img1 img1 img1 img3 img3 img3"
-      "img1 img1 img1 img1 img3 img3 img3"
-      ". img2 img2 img2 img3 img3 img3"
-      ". img2 img2 img2 img3 img3 img3"
-      ". img2 img2 img2 . . .";
-  }
+  
   .img1 {
-    grid-area: img1;
     width: 150px;
     height: 113px;
   }
   .img2 {
-    grid-area: img2;
     width: 103px;
     height: 175px;
   }
   .img3 {
-    grid-area: img3;
     width: 120px;
     height: 230px;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .home__search {
-    height: 20rem;
-    background-image: url(../../../assets/img/HeroImagemd.png);
-  }
-
-  .home__info img {
-    width: 8rem;
-    fill: #fff;
-    align-content: flex-start;
-    margin-bottom: 10px;
-  }
-
-  .home__info p {
-    width: 100% !important;
-    font-size: 0.9rem;
-  }
-
-  .home__input-container {
-    width: 100% !important;
-    height: 2rem;
-    margin-top: 10px !important;
-  }
-
-  .home__input-container input {
-    width: 100%;
-    font-size: 0.5rem;
-
-    &::placeholder {
-      content: "search";
-    }
-  }
 
   .home__card-container {
     gap: 20px;
@@ -269,82 +213,13 @@
   }
 
   .card-img-top {
-    border-radius: 10px;
     width: 156px;
     height: 140px;
   }
 
-  .card-text {
-    font-size: 0.5rem;
-  }
-
   // see more
 
-  .home__more {
-    height: 100%;
-  }
-
-  .home__allinfo h4 {
-    font-size: 0.8rem;
-  }
-
   // info page
-  .home__see-more {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 5px !important;
-  }
-
-  .home__see-more h2 {
-    width: 100%;
-    margin-top: 10px;
-    font-size: 1.3rem;
-  }
-
-  .home__see-more p {
-    width: 100%;
-    font-size: 0.6rem;
-  }
-  .more-see p {
-    font-size: 0.5rem;
-  }
-  .home__info-info {
-    margin-top: 1.5rem !important;
-  }
-  .home__info-more {
-    width: 100%;
-    height: 230px;
-    justify-content: center;
-  }
-
-  .home__info-gallery {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 0.9fr 0.8fr 0.3fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    grid-template-areas:
-      "img1 img1 img1 img1 img3 img3 img3"
-      "img1 img1 img1 img1 img3 img3 img3"
-      ". img2 img2 img2 img3 img3 img3"
-      ". img2 img2 img2 img3 img3 img3"
-      ". img2 img2 img2 . . .";
-  }
-  .img1 {
-    grid-area: img1;
-    width: 150px;
-    height: 113px;
-  }
-  .img2 {
-    grid-area: img2;
-    width: 103px;
-    height: 175px;
-  }
-  .img3 {
-    grid-area: img3;
-    width: 120px;
-    height: 230px;
-  }
 }
 
 @media screen and (max-width: 425px) {
@@ -368,27 +243,19 @@
 
   .home__info img {
     width: 5rem;
-    fill: #fff;
-    align-content: flex-start;
-    margin-bottom: 10px;
   }
 
   .home__info p {
-    width: 100% !important;
     font-size: 0.7rem;
   }
 
   .home__input-container {
     width: 80% !important;
-    height: 2rem;
-    margin-top: 10px !important;
   }
 
   .home__input-container input {
     border: none;
     margin: auto 0;
-    width: 100%;
-    font-size: 0.5rem;
 
     &::placeholder {
       content: "search";
@@ -444,69 +311,11 @@
   }
 
   // info page
-  .home__see-more {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 5px !important;
-  }
 
-  .home__see-more h2 {
-    width: 100%;
-    margin-top: 10px;
-    font-size: 1.3rem;
-  }
-
-  .home__see-more p {
-    width: 100%;
-    font-size: 0.6rem;
-  }
-
-  .more-see p {
-    font-size: 0.5rem;
-  }
-  .home__info-info {
-    margin-top: 1.5rem !important;
-  }
-  .home__info-more {
-    width: 100%;
-    height: 230px;
-    justify-content: center;
-  }
-
-  .home__info-gallery {
-    width: 10px;
-  }
-
-  .home__info-gallery {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 0.9fr 0.8fr 0.3fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    grid-template-areas:
-      "img1 img1 img1 img1 img3 img3 img3"
-      "img1 img1 img1 img1 img3 img3 img3"
-      ". img2 img2 img2 img3 img3 img3"
-      ". img2 img2 img2 img3 img3 img3"
-      ". img2 img2 img2 . . .";
-  }
-  .img1 {
-    grid-area: img1;
-    width: 150px;
-    height: 113px;
-  }
-  .img2 {
-    grid-area: img2;
-    width: 103px;
-    height: 175px;
-  }
   .img3 {
-    grid-area: img3;
     width: 130px;
-    height: 230px;
   }
   // footer
-
   .home__footer {
     margin-top: 20px !important;
   }
@@ -519,583 +328,114 @@
   }
   .home__footer-info p {
     font-size: 0.8rem;
+  }
+
+  .cat__background{
+    width: 100%;
+    height: 200px;  
+    border-radius:25px;
+  }
+
+  .cat__presentation{
+    display: block;
+  }
+
+  .cat__presentation img {
+    border-radius: 10px;
+    width: 296px;
+  }
+
+  .cat__all-info {
+    gap: 10px;
+    grid-template-rows: 0.1fr 0.2fr 1.4fr;
+  }
+
+  .cat__all-info p {
+    font-size: 0.6rem;
+    font-weight: 600;
+  }
+
+  .rating__a{
+    font-size: .2rem;
+  }
+
+  .rating p{
+    width: 100px;
+  }
+
+  .cat__raitin{
+    width: 30px;
+    height: 7px;
   }
 }
 
 @media screen and (max-width: 375px) {
-  .home__search {
-    height: 9rem;
-    background-image: url(../../../assets/img/HeroImagesm.png);
-    margin-top: 0.5rem !important;
-  }
 
-  .home__info-info {
-    flex-direction: column;
-    align-items: stretch;
-    width: 100%;
-  }
-
-  .home__info {
-    width: 70%;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-
-  .home__info img {
-    width: 5rem;
-    fill: #fff;
-    align-content: flex-start;
-    margin-bottom: 10px;
-  }
-
-  .home__info p {
-    width: 100% !important;
-    font-size: 0.7rem;
-  }
-
-  .home__input-container {
-    width: 80% !important;
-    height: 2rem;
-    margin-top: 10px !important;
-  }
-
-  .home__input-container input {
-    border: none;
-    margin: auto 0;
-    width: 100%;
-    font-size: 0.5rem;
-
-    &::placeholder {
-      content: "search";
-    }
-    &:focus {
-      outline: none;
-    }
-  }
-  
-  .home__list{
-    width: 132px !important;
-    font-size: .6rem;
-  }
-
-  .list{
-    height: 30px;
-  }
-
-  .juli a{
-    display: flex;
-    margin: auto 0px;
-    text-decoration: none;
-    text-align: center;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .home__card-container {
-    grid-template-columns: repeat(auto-fit, minmax(103px, 1fr));
-    gap: 20px;
-    margin-bottom: 20px;
-  }
   .card {
     width: 124px;
   }
 
   .card-img-top {
-    border-radius: 10px;
     width: 124px;
     height: 110px;
   }
 
-  .card-text {
-    font-size: 0.5rem;
-  }
   // see more
 
-  .home__more {
-    height: 100%;
-  }
-
-  .home__allinfo h4 {
-    font-size: 0.8rem;
-  }
-
   // info page
-  .home__see-more {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 5px !important;
-  }
 
-  .home__see-more h2 {
-    width: 100%;
-    margin-top: 10px;
-    font-size: 1.3rem;
-  }
-
-  .home__see-more p {
-    width: 100%;
-    font-size: 0.6rem;
-  }
-
-  .more-see p {
-    font-size: 0.5rem;
-  }
-  .home__info-info {
-    margin-top: 1.5rem !important;
-  }
-  .home__info-more {
-    width: 100%;
-    height: 230px;
-    justify-content: center;
-  }
-
-  .home__info-gallery {
-    width: 10px;
-  }
-
-  .home__info-gallery {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 0.9fr 0.8fr 0.3fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    grid-template-areas:
-      "img1 img1 img1 img1 img3 img3 img3"
-      "img1 img1 img1 img1 img3 img3 img3"
-      ". img2 img2 img2 img3 img3 img3"
-      ". img2 img2 img2 img3 img3 img3"
-      ". img2 img2 img2 . . .";
-  }
-  .img1 {
-    grid-area: img1;
-    width: 150px;
-    height: 113px;
-  }
-  .img2 {
-    grid-area: img2;
-    width: 103px;
-    height: 175px;
-  }
-  .img3 {
-    grid-area: img3;
-    width: 130px;
-    height: 230px;
-  }
   // footer
 
-  .home__footer {
-    margin-top: 20px !important;
-  }
-  .home__footer-info {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .home__footer-info img {
-    width: 5rem;
-  }
-  .home__footer-info p {
-    font-size: 0.8rem;
-  }
   .cat__presentation {
     display: flex;
     flex-direction: column;
   }
-  .cat__presentation img {
-    border-radius: 10px;
-    width: 296px;
-  }
-
-  .cat__all-info {
-    gap: 10px;
-    grid-template-rows: 0.1fr 0.2fr 1.4fr;
-  }
-
-  .cat__all-info p {
-    font-size: 0.6rem;
-    font-weight: 600;
-  }
-
-  .rating__a{
-    font-size: .2rem;
-  }
-
-  .rating p{
-    width: 100px;
-  }
-
-  .cat__raitin{
-    width: 30px;
-    height: 7px;
-  }
 }
+
 @media screen and (max-width: 358px) {
   .home__card-container {
-    grid-template-columns: repeat(auto-fit, minmax(103px, 1fr));
     gap: 10px;
-    margin-bottom: 20px;
   }
   .card {
     width: 122px;
   }
 
   .card-img-top {
-    border-radius: 10px;
     width: 122px;
     height: 100px;
   }
-
-  .card-text {
-    font-size: 0.5rem;
-  }
   // see more
-
-  .home__more {
-    height: 100%;
-  }
-
-  .home__allinfo h4 {
-    font-size: 0.8rem;
-  }
-
   // info page
-  .home__see-more {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 5px !important;
-  }
-
-  .home__see-more h2 {
-    width: 100%;
-    margin-top: 10px;
-    font-size: 1.3rem;
-  }
-
-  .home__see-more p {
-    width: 100%;
-    font-size: 0.6rem;
-  }
-
-  .more-see p {
-    font-size: 0.5rem;
-  }
-  .home__info-info {
-    margin-top: 1.5rem !important;
-  }
-  .home__info-more {
-    width: 100%;
-    height: 230px;
-    justify-content: center;
-  }
-
-  .home__input-container {
-    width: 80% !important;
-    height: 2rem;
-    margin-top: 10px !important;
-  }
-
-  .home__list{
-    width: 132px !important;
-    font-size: .6rem;
-  }
-
-  .list{
-    height: 30px;
-  }
-
-  .juli a{
-    display: flex;
-    margin: auto 0px;
-    text-decoration: none;
-    text-align: center;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .home__info-gallery {
-    width: 10px;
-  }
-
-  .home__info-gallery {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 0.9fr 0.8fr 0.3fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    grid-template-areas:
-      "img1 img1 img1 img1 img3 img3 img3"
-      "img1 img1 img1 img1 img3 img3 img3"
-      ". img2 img2 img2 img3 img3 img3"
-      ". img2 img2 img2 img3 img3 img3"
-      ". img2 img2 img2 . . .";
-  }
-  .img1 {
-    grid-area: img1;
-    width: 150px;
-    height: 113px;
-  }
-  .img2 {
-    grid-area: img2;
-    width: 103px;
-    height: 175px;
-  }
-  .img3 {
-    grid-area: img3;
-    width: 130px;
-    height: 230px;
-  }
   // footer
-
-  .home__footer {
-    margin-top: 20px !important;
-  }
-  .home__footer-info {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .home__footer-info img {
-    width: 5rem;
-  }
-  .home__footer-info p {
-    font-size: 0.8rem;
-  }
-
   .cat__presentation {
     display: flex;
     flex-direction: column;
   }
-  .cat__presentation img {
-    border-radius: 10px;
-    width: 296px;
-  }
 
-  .cat__all-info {
-    gap: 10px;
-    grid-template-rows: 0.1fr 0.2fr 1.4fr;
-  }
-
-  .cat__all-info p {
-    font-size: 0.6rem;
-    font-weight: 600;
-  }
-
-  .rating__a{
-    font-size: .2rem;
-  }
-
-  .rating p{
-    width: 100px;
-  }
-
-  .cat__raitin{
-    width: 30px;
-    height: 7px;
-  }
 }
 
 @media screen and (max-width: 320px) {
-  .home__search {
-    height: 9rem;
-    background-image: url(../../../assets/img/HeroImagesm.png);
-    margin-top: 0.5rem !important;
-  }
-
-  .home__info-info {
-    flex-direction: column;
-    align-items: stretch;
-    width: 100%;
-  }
-
-  .home__info {
-    width: 70%;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-
-  .home__info img {
-    width: 5rem;
-    fill: #fff;
-    align-content: flex-start;
-    margin-bottom: 10px;
-  }
-
-  .home__info p {
-    width: 100% !important;
-    font-size: 0.7rem;
-  }
-
-  .home__input-container {
-    width: 80% !important;
-    height: 2rem;
-    margin-top: 10px !important;
-  }
-
   .home__input-container input {
-    border: none;
-    margin: auto 0;
-    width: 100%;
     font-size: 0.6rem;
-
-    &::placeholder {
-      content: "search";
-    }
-    &:focus {
-      outline: none;
-    }
   }
-
-  .home__list{
-    width: 132px !important;
-    font-size: .6rem;
-  }
-
-  .list{
-    height: 30px;
-  }
-
-  .juli a{
-    display: flex;
-    margin: auto 0px;
-    text-decoration: none;
-    text-align: center;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
   .home__card-container {
-    grid-template-columns: repeat(auto-fit, minmax(103px, 1fr));
     gap: 10px;
-    margin-bottom: 20px;
   }
   .card {
     width: 100px;
   }
-
   .card-img-top {
-    border-radius: 10px;
     width: 107px;
     height: 100px;
   }
-
   .card-text {
     font-size: 0.5rem;
   }
   // see more
-
-  .home__more {
-    height: 100%;
-  }
-
-  .home__allinfo h4 {
-    font-size: 0.8rem;
-  }
-
   // info page
-  .home__see-more {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 5px !important;
-  }
-
-  .home__see-more h2 {
-    width: 100%;
-    margin-top: 10px;
-    font-size: 1.3rem;
-  }
-
-  .home__see-more p {
-    width: 100%;
-    font-size: 0.6rem;
-  }
-
-  .more-see p {
-    font-size: 0.5rem;
-  }
-  .home__info-info {
-    margin-top: 1.5rem !important;
-  }
-  .home__info-more {
-    width: 100%;
-    height: 230px;
-    justify-content: center;
-  }
-
-  .home__info-gallery {
-    width: 10px;
-  }
-
-  .home__info-gallery {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 0.9fr 0.8fr 0.3fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    grid-template-areas:
-      "img1 img1 img1 img1 img3 img3 img3"
-      "img1 img1 img1 img1 img3 img3 img3"
-      ". img2 img2 img2 img3 img3 img3"
-      ". img2 img2 img2 img3 img3 img3"
-      ". img2 img2 img2 . . .";
-  }
-  .img1 {
-    grid-area: img1;
-    width: 150px;
-    height: 113px;
-  }
-  .img2 {
-    grid-area: img2;
-    width: 103px;
-    height: 175px;
-  }
-  .img3 {
-    grid-area: img3;
-    width: 130px;
-    height: 230px;
-  }
-  // footer
-
-  .home__footer {
-    margin-top: 20px !important;
-  }
-  .home__footer-info {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .home__footer-info img {
-    width: 5rem;
-  }
-  .home__footer-info p {
-    font-size: 0.8rem;
-  }
-
   // catScreen
   .cat__presentation {
     display: flex;
     flex-direction: column;
-  }
-  .cat__presentation img {
-    border-radius: 10px;
-    width: 296px;
-  }
-
-  .cat__all-info {
-    gap: 10px;
-    grid-template-rows: 0.1fr 0.2fr 1.4fr;
-  }
-
-  .cat__all-info p {
-    font-size: 0.6rem;
-    font-weight: 600;
-  }
-
-  .rating__a{
-    font-size: .2rem;
-  }
-
-  .rating p{
-    width: 100px;
-  }
-
-  .cat__raitin{
-    width: 30px;
-    height: 7px;
   }
 }

@@ -2,7 +2,7 @@ import React, { useState }  from "react";
 
 export const Raiting = ({ cat }) => {
   const [raitin, setRaitin] = useState(true);
-  // const num1 = 4;
+  
   const uwu = [
     "Adaptability",
     "Affection level",
