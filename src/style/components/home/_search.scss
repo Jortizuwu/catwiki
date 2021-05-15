@@ -87,6 +87,12 @@
 
   &:hover{
     background-color: rgba(199, 199, 199, 0.596);
-    border-radius: 4mepx;
+    border-radius: 4px;
   }
+}
+
+.home__no-encontrado{
+  position: absolute;
+  z-index: 1;
+  color: rgba(253, 36, 36, 0.959);
 }

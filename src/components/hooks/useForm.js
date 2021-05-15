@@ -8,6 +8,5 @@ export const useForm = (ini = {}) => {
       [target.name]: target.value,
     });
   };
-
   return [values, handleInputChange];
 };
