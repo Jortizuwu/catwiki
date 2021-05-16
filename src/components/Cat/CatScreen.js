@@ -1,18 +1,23 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import HashLoader from "react-spinners/HashLoader";
+
 import { allCatsByBreedName } from "../../api/getInfoByApi";
 import { resolutionContext } from "../../context/resolutionContext";
-import { Raiting } from "./Raiting";
+import { CatResolution } from "./CatResolution";
+import { CatPresentation } from "./CatPresentation";
 
 export const CatScreen = ({ history }) => {
+  const [loading, setLoading] = useState(true);
   const { resolution } = useContext(resolutionContext);
   const { id } = useParams();
-  const [cat, setCat] = useState([]);
+  const [cat, setCat] = useState(null);
 
   useEffect(() => {
     const dataByCat = async () => {
       const data = await allCatsByBreedName(id);
       setCat(data);
+      setLoading(false);
     };
     dataByCat();
   }, [id]);
@@ -22,8 +27,8 @@ export const CatScreen = ({ history }) => {
   };
 
   return (
-    <main className="animate__animated animate__fadeIn">
-      {cat &&
+    <main className=" home__page">
+      {cat ? (
         cat.map((info) => {
           return (
             <div
@@ -31,39 +36,9 @@ export const CatScreen = ({ history }) => {
               key={info.id}
             >
               {resolution < 450 ? (
-                <div>
-                  <div
-                    className="cat__background animate__animated animate__fadeIn"
-                    style={{
-                      backgroundImage: `url(${info?.url})`,
-                      height: "400px",
-                      width: "100%",
-                      borderRadius: "15px",
-                      backgroundPosition: "center",
-                      backgroundSize: "cover",
-                      padding: "10px",
-                      display: "flex",
-                      flexDirection: "column",
-                      justifyContent: "space-between",
-                    }}
-                  >
-                    <button
-                      onClick={handleGoback}
-                      className="cat__back"
-                      style={{ background: "white" }}
-                    >
-                      <span
-                        className="material-icons"
-                        style={{ color: "black", fontSize: "1rem" }}
-                      >
-                        chevron_left
-                      </span>
-                    </button>
-                    <p className="cat__origin">{info.breeds[0]?.origin}</p>
-                  </div>
-                </div>
+                <CatResolution info={info} handleGoback={handleGoback} />
               ) : (
-                <div className="cat__banner">
+                <div className="cat__banner animate__animated animate__fadeIn">
                   <button onClick={handleGoback} className="cat__back">
                     <span className="material-icons">chevron_left</span>
                   </button>
@@ -72,29 +47,16 @@ export const CatScreen = ({ history }) => {
                   </div>
                 </div>
               )}
-              <div className="cat__presentation">
-                <div className="cat__all-info">
-                  <h5>{info.breeds[0]?.name}</h5>
-                  <p>{info.breeds[0]?.description}</p>
-                  <div className="rating__a">
-                    <p className="hola">
-                      temperament: <span>{info.breeds[0]?.temperament}</span>
-                    </p>
-                    <p className="hola">
-                      origin: 
-                      <span> {info.breeds[0]?.origin}</span>
-                    </p>
-                    <p className="hola">
-                      life span: <span>{info.breeds[0]?.life_span}</span>
-                    </p>
-                    <Raiting cat={info} />
-                  </div>
-                </div>
-              </div>
+              <CatPresentation info={info} />
               <div>other</div>
             </div>
           );
-        })}
+        })
+      ) : (
+        <div className="loading__page home__page">
+          <HashLoader color={"36D7B7"} loading={loading} size={50} />
+        </div>
+      )}
     </main>
   );
 };

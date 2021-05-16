@@ -22,3 +22,14 @@ body{
 .pointer {
   cursor: pointer;
 }
+
+.home__page{
+  min-height: calc(100vh - 100px - 63px);
+}
+
+.loading__page{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
