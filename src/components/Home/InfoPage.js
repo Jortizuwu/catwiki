@@ -1,8 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import image1 from "../../assets/img/image1.png";
-import image2 from "../../assets/img/image2.png";
-import image3 from "../../assets/img/image3.png";
 
 export const InfoPage = () => {
   return (
@@ -19,9 +16,9 @@ export const InfoPage = () => {
         </Link>
       </div>
       <div className="home__info-gallery">
-        <img className="img1" src={image2} alt="img cat" />
-        <img className="img2" src={image1} alt="img cat" />
-        <img className="img3" src={image3} alt="img cat" />
+        <img className="img1" src="https://i.imgur.com/3zn6ruX.png" alt="img cat" />
+        <img className="img2" src="https://i.imgur.com/erbeAT5.png" alt="img cat" />
+        <img className="img3" src="https://i.imgur.com/5GxYg70.png" alt="img cat" />
       </div>
     </div>
   );

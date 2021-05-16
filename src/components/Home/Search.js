@@ -39,7 +39,7 @@ export const Search = () => {
     <div className="home__search mt-4">
       <div className="home__info">
         <div>
-          <img src={logo} alt="logo" style={{ fill: "#fff" }} />
+          <img src={logo} alt="logo" />
           <p style={{ width: "250px" }}>
             Get to know more about your
             <br />

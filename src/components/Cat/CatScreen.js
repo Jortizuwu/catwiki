@@ -40,7 +40,7 @@ export const CatScreen = ({ history }) => {
               ) : (
                 <div className="cat__banner animate__animated animate__fadeIn">
                   <button onClick={handleGoback} className="cat__back">
-                    <span className="material-icons">chevron_left</span>
+                    <span className="material-icons">arrow_back</span>
                   </button>
                   <div className="cat__img">
                     <img src={info?.url} alt={`breed ${id}`} />
