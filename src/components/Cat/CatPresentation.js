@@ -1,11 +1,27 @@
 import React from "react";
 import { Raiting } from "./Raiting";
 
-export const CatPresentation = ({ info }) => {
+export const CatPresentation = ({ info,addCatId }) => {
+
+  
   return (
     <div className="cat__presentation animate__animated animate__fadeIn">
       <div className="cat__all-info">
-        <h5>{info.breeds[0]?.name}</h5>
+        <div className="d-flex justify-content-between">
+          <h5>{info.breeds[0]?.name}</h5>
+          <button
+            onClick={addCatId}
+            className="cat__back"
+            style={{ background: "#fff" }}
+          >
+            <span
+              className="material-icons"
+              style={{ color: "red", fontSize: "1rem" }}
+            >
+              favorite
+            </span>
+          </button>
+        </div>
         <p>{info.breeds[0]?.description}</p>
         <div className="rating__a">
           <p className="hola">

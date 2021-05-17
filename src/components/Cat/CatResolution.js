@@ -1,6 +1,6 @@
 import React from "react";
 
-export const CatResolution = ({ info, handleGoback }) => {
+export const CatResolution = ({ info, handleGoback,addCatId }) => {
   const style = {
     backgroundImage: `url(${info?.url})`,
     height: "400px",
@@ -34,7 +34,8 @@ export const CatResolution = ({ info, handleGoback }) => {
             </span>
           </button>
           <button
-            onClick={handleGoback}
+            onClick={addCatId}
+            value={info?.id}
             className="cat__back"
             style={{ background: "#fff" }}
           >

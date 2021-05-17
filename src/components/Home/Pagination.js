@@ -1,19 +1,25 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { allCatsContext } from "../../context/allCatsContext";
 
 export const Pagination = () => {
   const { allCats } = useContext(allCatsContext);
   const [pagination, setPagination] = useState(0);
+  const isMonted = useRef(false);
 
   useEffect(() => {
-    setTimeout(() => {
-      if (pagination < 64) {
-        setPagination(pagination + 4);
-      } else {
-        setPagination(0);
-      }
-    }, 20000);
+    if(!isMonted.current){
+      setTimeout(() => {
+        if (pagination < 64) {
+          setPagination(pagination + 4);
+        } else {
+          setPagination(0);
+        }
+      }, 15000);
+    }
+    return () => {
+      isMonted.current = true;
+    };
   }, [pagination]);
 
   return (
@@ -21,7 +27,11 @@ export const Pagination = () => {
       {allCats.length > 0 ? (
         allCats.slice(pagination, pagination + 4).map((cat) => {
           return (
-            <Link key={cat.id} to={`/breed/${cat.id}`} className="card animate__animated animate__fadeInLeft">
+            <Link
+              key={cat.id}
+              to={`/breed/${cat.id}`}
+              className="card animate__animated animate__fadeInLeft"
+            >
               <img
                 src={cat?.image?.url}
                 className="card-img-top card animate__animated animate__fadeIn"

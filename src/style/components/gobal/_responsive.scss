@@ -424,6 +424,19 @@
     font-weight: 700;
     color: lighten($color: #000000, $amount: 5);
   }
+
+  .favorite__title {
+    font-size: 0.9rem;
+  }
+
+  .favorite__description {
+    font-size: 0.5rem;
+    font-weight: 600;
+  }
+
+  .fav__card-conta{
+    flex-direction: column !important;
+  }
 }
 
 @media screen and (max-width: 415px) {
