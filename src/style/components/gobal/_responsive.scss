@@ -451,6 +451,10 @@
   .fav__card-conta{
     flex-direction: column !important;
   }
+
+  .list__empty{
+    font-size: .8rem;
+  }
 }
 
 @media screen and (max-width: 415px) {
@@ -523,6 +527,9 @@
   .cat__presentation {
     display: flex;
     flex-direction: column;
+  }
+  .list__empty{
+    font-size: .6rem;
   }
 }
 

@@ -57,3 +57,8 @@
     color: lighten($color: red, $amount: 10);
   }
 }
+
+.list__empty{
+  color: $primary;
+  font-weight: 700;
+}

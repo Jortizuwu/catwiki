@@ -19,7 +19,9 @@ export const NavLogo = () => {
         >
           favorite
         </span>
-        favorite list {listCatsFavorite.length}
+        <p className="m-2">
+          favorite list {listCatsFavorite.length}
+        </p>
       </Link>
     </nav>
   );

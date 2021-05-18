@@ -1,10 +1,10 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { favoriteContext } from "../../context/favoriteContext";
+import PacmanLoader from "react-spinners/PacmanLoader";
 
 export const Favorite = ({ history }) => {
   const { setListCatsFavorite, listCatsFavorite } = useContext(favoriteContext);
-
   const handleGoback = () => {
     history.goBack();
   };
@@ -23,7 +23,9 @@ export const Favorite = ({ history }) => {
       <button onClick={handleGoback} className="btn btn-back material-icons">
         arrow_back
       </button>
-      <h1 className="favorite__title mt-3" style={{color: "#291507"}}>Favorite list</h1>
+      <h1 className="favorite__title mt-3" style={{ color: "#291507" }}>
+        Favorite list
+      </h1>
       <div>
         {listCatsFavorite.length > 0 ? (
           <div>
@@ -59,7 +61,10 @@ export const Favorite = ({ history }) => {
             ))}
           </div>
         ) : (
-          <div>vacia como los sentimientos de ella hacia ti</div>
+          <div className="d-flex flex-column align-items-center justify-content-center mt-5 list__empty">
+            <p className="mb-4">the list is empty, please add one or more kittens uwu</p>
+            <PacmanLoader color={"#36D7B7"} loading={true} size={30} />
+          </div>
         )}
       </div>
     </div>
