@@ -1,9 +1,7 @@
 import React from "react";
 import { Raiting } from "./Raiting";
 
-export const CatPresentation = ({ info,addCatId }) => {
-
-  
+export const CatPresentation = ({ info, addCatId }) => {
   return (
     <div className="cat__presentation animate__animated animate__fadeIn">
       <div className="cat__all-info">
@@ -11,15 +9,9 @@ export const CatPresentation = ({ info,addCatId }) => {
           <h5>{info.breeds[0]?.name}</h5>
           <button
             onClick={addCatId}
-            className="cat__back"
-            style={{ background: "#fff" }}
+            className="btn btn-favorite material-icons cat__display2"
           >
-            <span
-              className="material-icons"
-              style={{ color: "red", fontSize: "1rem" }}
-            >
-              favorite
-            </span>
+            favorite
           </button>
         </div>
         <p>{info.breeds[0]?.description}</p>

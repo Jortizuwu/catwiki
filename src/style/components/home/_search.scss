@@ -15,9 +15,10 @@
 .home__info {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  width: 40%;
+  margin: 0px auto;
+  width: 81%;
 }
 
 .home__info img {

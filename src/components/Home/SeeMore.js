@@ -1,6 +1,5 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import { allCatsContext } from "../../context/allCatsContext";
 import Typical from "react-typical";
 import { Pagination } from "./Pagination";
 

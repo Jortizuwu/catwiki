@@ -1,3 +1,7 @@
+.cat__display{
+  display: none !important;
+}
+
 .cat__container {
   color: #291507;
   display: grid;
@@ -5,6 +9,7 @@
   grid-template-rows: 1fr;
   gap: 40px;
 }
+
 
 .cat__banner {
   display: flex;
@@ -82,28 +87,6 @@
 
 .istrue {
   background-color: #291507;
-}
-
-.cat__back {
-  border: none;
-  border-radius: 25px;
-  background-color: #291507;
-  width: 30px;
-  transition: 0.3s ease;
-
-  &:hover {
-    background-color: darken($color: #c4c4c4, $amount: 50);
-    color: #291507;
-  }
-}
-
-.cat__back span {
-  margin: 5px auto;
-  height: 100%;
-  color: white;
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 700;
 }
 
 .raitin {

@@ -1,6 +1,6 @@
 import React from "react";
 
-export const CatResolution = ({ info, handleGoback,addCatId }) => {
+export const CatResolution = ({ info, handleGoback, addCatId }) => {
   const style = {
     backgroundImage: `url(${info?.url})`,
     height: "400px",
@@ -15,7 +15,7 @@ export const CatResolution = ({ info, handleGoback,addCatId }) => {
   };
 
   return (
-    <div className="animate__animated animate__fadeIn">
+    <div className="animate__animated animate__fadeIn cat__display">
       <div
         className="cat__background animate__animated animate__fadeIn"
         style={style}
@@ -23,28 +23,16 @@ export const CatResolution = ({ info, handleGoback,addCatId }) => {
         <div className="d-flex justify-content-between">
           <button
             onClick={handleGoback}
-            className="cat__back"
-            style={{ background: "white" }}
+            className="btn btn-back material-icons"
           >
-            <span
-              className="material-icons"
-              style={{ color: "black", fontSize: "1rem" }}
-            >
-              chevron_left
-            </span>
+            chevron_left
           </button>
           <button
             onClick={addCatId}
             value={info?.id}
-            className="cat__back"
-            style={{ background: "#fff" }}
+            className="btn btn-favorite material-icons"
           >
-            <span
-              className="material-icons"
-              style={{ color: "red", fontSize: "1rem" }}
-            >
-              favorite
-            </span>
+            favorite
           </button>
         </div>
         <p className="cat__origin">{info.breeds[0]?.origin}</p>

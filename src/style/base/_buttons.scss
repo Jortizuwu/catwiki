@@ -1,0 +1,27 @@
+.btn{
+    border-radius: 25px;
+    background: #fff !important;
+    // width: 30px;
+    height: 30px;
+    font-size: 1rem;
+    &:focus{
+        box-shadow: none;
+    }
+
+}
+
+.btn-favorite{
+    color: red;
+    border:1px solid red;
+    &:hover{
+        color: rgb(255, 0, 0);
+    }
+}
+
+.btn-back{
+    background-color: $primary !important;
+    color: #fff;
+    &:hover{
+        color: #fff;
+    }
+}
