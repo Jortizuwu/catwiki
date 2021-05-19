@@ -11,6 +11,7 @@ import { CatScreen } from "../components/Cat/CatScreen";
 import { Favorite } from "../components/favorite/Favorite";
 import { Footer } from "../components/Footer";
 import { HomeScreen } from "../components/Home/HomeScreen";
+import { MostSearch } from "../components/mostSearch/MostSearch";
 import { NavLogo } from "../components/NavLogo";
 
 export const AppRouter = () => {
@@ -21,6 +22,7 @@ export const AppRouter = () => {
         <Switch>
           <Route exact path="/" component={HomeScreen} />
           <Route exact path="/favorites" component={Favorite} />
+          <Route exact path="/most" component={MostSearch} />
           <Route exact path="/breed/:id" component={CatScreen} />
           <Redirect to="/" />
         </Switch>

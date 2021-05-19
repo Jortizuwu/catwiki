@@ -1,7 +1,6 @@
 .btn{
     border-radius: 25px;
-    background: #fff !important;
-    // width: 30px;
+    background: $white !important;
     height: 30px;
     font-size: 1rem;
     &:focus{
@@ -11,17 +10,17 @@
 }
 
 .btn-favorite{
-    color: red;
-    border:1px solid red;
+    color: $red;
+    border:1px solid $red;
     &:hover{
-        color: rgb(255, 0, 0);
+        color: $red;
     }
 }
 
 .btn-back{
     background-color: $primary !important;
-    color: #fff;
+    color: $white;
     &:hover{
-        color: #fff;
+        color: $white;
     }
 }

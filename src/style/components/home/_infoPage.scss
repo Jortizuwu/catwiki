@@ -13,7 +13,7 @@
   flex-direction: column;
   height: 290px;
   width: 65%;
-  color: #291507;
+  color: $primary;
 }
 
 .home__info-more h2 {
@@ -27,7 +27,7 @@
     height: 5px;
     margin-bottom: 5px;
     border-radius: 25px;
-    background-color: #291507;
+    background-color: $primary;
   }
 }
 

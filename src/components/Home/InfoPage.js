@@ -10,7 +10,7 @@ export const InfoPage = () => {
           Having a cat around you can actually trigger the release of calming
           chemicals in your body which lower your stress and anxiety leves
         </p>
-        <Link to="/" className="more-see">
+        <Link to="/most" className="more-see">
           <p className="">read more</p>
           <span className="material-icons arrow">arrow_right</span>
         </Link>

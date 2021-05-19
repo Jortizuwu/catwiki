@@ -25,7 +25,7 @@ export const SeeMore = () => {
             66+ Breeds For you to discover as
             <Typical steps={showNames} loop={Infinity} wrapper="p" />
           </h2>
-          <Link to="/" className="more-see">
+          <Link to="/most" className="more-see">
             <p>see more</p>
             <span className="material-icons arrow">arrow_right</span>
           </Link>

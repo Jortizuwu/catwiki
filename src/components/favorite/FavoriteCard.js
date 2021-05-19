@@ -10,7 +10,7 @@ export const FavoriteCard = ({cat, idx, handleDeleteCatFavoriteCard}) => {
               >
                 <div className="d-flex">
                   <div className="flex-shrink-0 favorite__img-conatiner">
-                    <img src={cat.url} className="favorite__img" />
+                    <img src={cat.url} alt={`img cat ${cat.breeds[0].name}`} className="favorite__img" />
                   </div>
                   <div className="favorite__card-body d-flex">
                     <div className="">

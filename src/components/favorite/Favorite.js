@@ -20,7 +20,7 @@ export const Favorite = ({ history }) => {
   };
 
   return (
-    <div className="home__page">
+    <div className="home__page animate__animated animate__fadeIn">
       <button onClick={handleGoback} className="btn btn-back material-icons">
         arrow_back
       </button>

@@ -3,7 +3,7 @@
 }
 
 .cat__container {
-  color: #291507;
+  color: $primary;
   display: grid;
   grid-template-columns: 0.7fr 1.2fr;
   grid-template-rows: 1fr;
@@ -56,7 +56,7 @@
   width: 150px;
   margin-bottom: 10px;
   font-weight: 700;
-  color: #291507;
+  color: $primary;
   font-size: 0.8rem;
   text-transform: capitalize;
   margin: 0px;
@@ -66,7 +66,7 @@
   width: 150px;
   margin-bottom: 10px;
   font-weight: 700;
-  color: #291507;
+  color: $primary;
   font-size: 0.8rem;
   text-transform: capitalize;
 }
@@ -79,17 +79,17 @@
   display: inline-block;
   width: 50px;
   height: 10px;
-  background-color: white;
+  background-color: $white;
   margin-left: 5px;
   border-radius: 25px;
-  border: 1px solid #c4c4c4;
+  border: 1px solid $segundari;
 }
 
 .istrue {
-  background-color: #291507;
+  background-color: $primary;
 }
 
 .raitin {
-  background: #291507;
-  color: #291507;
+  background: $primary;
+  color: $primary;
 }

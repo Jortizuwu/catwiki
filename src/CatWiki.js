@@ -4,9 +4,10 @@ import { allCatsContext } from "./context/allCatsContext";
 import { favoriteContext } from "./context/favoriteContext";
 import { AppRouter } from "./Routers/AppRouter";
 
+
 export const CatWiki = () => {
   const [allCats, setAllCats] = useState([]);
-  const [listCatsFavorite, setListCatsFavorite] = useState(JSON.parse(localStorage.getItem("cats")));
+  const [listCatsFavorite, setListCatsFavorite] = useState(JSON.parse(localStorage.getItem("cats")) || []);
   const isMounted = useRef(true);
   const handleLocalStorage = (vale) => {
     try {
@@ -14,6 +15,10 @@ export const CatWiki = () => {
       localStorage.setItem("cats", JSON.stringify(vale));
     } catch (error) {}
   };
+
+  useEffect(() => {
+    JSON.parse(localStorage.getItem("cats"))
+  },[])
 
   const addCatFavoriteList = (cat) => {
     const uwu = [cat].map((a) => {
