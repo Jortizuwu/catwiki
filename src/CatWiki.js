@@ -6,8 +6,14 @@ import { AppRouter } from "./Routers/AppRouter";
 
 export const CatWiki = () => {
   const [allCats, setAllCats] = useState([]);
-  const [listCatsFavorite, setListCatsFavorite] = useState([]);
+  const [listCatsFavorite, setListCatsFavorite] = useState(JSON.parse(localStorage.getItem("cats")));
   const isMounted = useRef(true);
+  const handleLocalStorage = (vale) => {
+    try {
+      setListCatsFavorite(vale);
+      localStorage.setItem("cats", JSON.stringify(vale));
+    } catch (error) {}
+  };
 
   const addCatFavoriteList = (cat) => {
     const uwu = [cat].map((a) => {
@@ -18,12 +24,12 @@ export const CatWiki = () => {
     });
     const cd = ids.find((a) => a.includes(uwu));
     if (cd === undefined) {
-      setListCatsFavorite([...listCatsFavorite, cat]);
+      handleLocalStorage([...listCatsFavorite, cat]);
     } else {
       const newArr = listCatsFavorite.filter(
         (cati) => cati.breeds[0].id !== cat.breeds[0].id
       );
-      setListCatsFavorite(newArr);
+      handleLocalStorage(newArr);
     }
   };
 
@@ -43,7 +49,7 @@ export const CatWiki = () => {
   return (
     <allCatsContext.Provider value={{ allCats }}>
       <favoriteContext.Provider
-        value={{ addCatFavoriteList, setListCatsFavorite, listCatsFavorite }}
+        value={{ addCatFavoriteList, handleLocalStorage, listCatsFavorite }}
       >
         <AppRouter />
       </favoriteContext.Provider>
